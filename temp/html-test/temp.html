@@ -1,0 +1,17 @@
+<!DOCTYPEhtmlPUBLIC"-//W3C//DTDXHTML1.0Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<htmlxmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>Porschev---Jquery事件冒泡</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="jquery-1.3.2-vsdoc.js"type="text/javascript"></script>
+</head>
+<body>
+	<form id="form1"runat="server">
+		<div id="divOne"onclick="alert('我是最外层');event.preventDefault();">
+			<div id="divTwo"onclick="alert('我是中间层！');event.stopPropagation();J">
+				<a id="hr_three"href="http://www.baidu.com"mce_ href="http://www.baidu.com"onclick="alert('我是最里层！')">点击我</a>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
